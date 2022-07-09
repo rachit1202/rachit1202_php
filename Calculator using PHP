@@ -1,0 +1,69 @@
+<?php
+if(isset($_POST['submit'])){
+	$result = "";
+	$fnum = $_POST['fnum'];
+	$snum = $_POST['snum'];
+	$oper = $_POST['opreator'];
+
+	switch($oper){
+		case '+';
+		$result = $fnum + $snum;
+		break;
+		case '-';
+		$result = $fnum - $snum;
+		break;
+		case '*';
+		$result = $fnum * $snum;
+		break;
+		case '/';
+		$result = $fnum / $snum;
+		break;
+	}
+}
+else{
+	$result ="Result Is Waitting";
+}
+?>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Calculator</title>
+</head>
+<body>
+<form method="POST">
+	<center><table border=2 cellpadding=25 cellspacing=5>
+		<tr>
+			<th colspan=2><font size=6>CALCULATOR</font></th>
+		</tr>
+	<tr>
+		<th>YOUR RESULT IS</th>
+		<th><font color="red"><?php echo "<h1>"."$result"; ?></font></th>
+	</tr>
+	<tr>
+		<td>FIRST NUMBER</td>
+		<td><input type="number" name="fnum"></td>
+	</tr>
+	<tr>
+		<td>SECOND NUMBER</td>
+		<td><input type="number" name="snum"></td>
+	</tr>
+	<tr>
+		<td>SELECT OPREATOR</td>
+		<td><select name="opreator">
+			<option value="+">+</option>
+			<option value="-">-</option>
+			<option value="*">*</option>
+			<option value="/">/</option>
+		</select></td>
+	</tr>
+	<tr>
+		<th colspan=2><font size="100px"><input type="submit" name="submit" value="submit"></font>
+		</th>
+	</tr>
+</table>
+</center>
+</form>
+</body>
+</html>
