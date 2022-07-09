@@ -1,0 +1,33 @@
+<?php
+if (isset($_POST['submit'])) {
+	$A = $_POST['A'];
+	$B = $_POST['B'];
+	$C = $_POST['C'];
+}
+if($A > $B && $A >$C){
+	echo " A is greatest ";
+}
+else if($B > $A && $B >$C){
+	echo " B is greatest ";
+}
+else{
+	echo "C is greatest";
+}
+?>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Greatest of Three Numbers</title>
+</head>
+<body>
+<form method="POST">
+	<label><h1>Enter any values</h1></label>
+	<input type="text" name="A">
+	<input type="text" name="B">
+	<input type="text" name="C">
+	<button type="submit" name="submit">SUBMIT</button>
+</form>
+</body>
+</html>
