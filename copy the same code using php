@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Code of when same code runs on all pages</title>
+</head>
+<body>
+<?php include('include/nav.php');?>
+</body>
+</html>
+<!-- include is a folder name and nav.php is a file name-->
