@@ -1,0 +1,60 @@
+<?php
+if (isset($_POST['submit'])) {
+  $name= $_POST['name'];
+  switch ($name) {
+    case '1':
+      echo "January";
+      break;
+    case '2':
+      echo "February";
+      break;
+    case '3':
+      echo "March";
+      break;
+    case '4':
+      echo "April";
+      break;
+    case '5':
+      echo "May";
+      break;
+    case '6':
+      echo "June";
+      break;
+    case '7':
+      echo "July";
+      break;
+    case '8':
+      echo "August";
+      break;
+    case '9':
+      echo "September";
+      break;
+    case '10':
+      echo "October";
+      break;
+    case '11':
+      echo "Number";
+      break;
+    case '12':
+      echo "December";
+      break;
+    default:
+      echo "Invalid Number";
+  }
+}
+?>
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Switch case code</title>
+</head>
+<body>
+  <h1>Enter any number from 1 to 12 and finds the month name</h1>
+<form method="POST">
+  <input type="text" name="name" placeholder="Enter any number">
+  <button type="submit" name="submit">SUBMIT</button>
+</form>
+</body>
+</html>
