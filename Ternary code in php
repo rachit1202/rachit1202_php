@@ -3,3 +3,4 @@ $a=50;
 ($a>=20)? $b="Greatest": $b="Lowest";
 echo "$b";
 ?>
+.
